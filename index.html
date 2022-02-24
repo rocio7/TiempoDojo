@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Tiempo Dojo</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>DojoWeather</h1>
+                <ul class="links">
+                    <li>
+                        <a href="#" onclick="alerta(this)" >Burbank </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="alerta(this)">Chicago</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="alerta(this)">Dallas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="sanjose">
+                <h2>San Jose</h2>
+                <form >
+                    <label>Show temperature in </label>
+                    <select name="escalaTemperatura" onchange="cambiaTemperatura(this)">
+                        <option>C</option>
+                        <option>F</option>
+                    </select>
+                </form>
+            </div>
+            <div class="row">
+                <div class="dia">
+                    <h2>Today</h2>
+                    <img src="img/some_rain.png" alt="lluvioso">
+                    <p>some rain</p>
+                    <p class=" temperaturas">
+                        <span class="temMax"id="temperatura1" >24</span>
+                        <span class="temMin" id="temperatura2">18</span>
+                    </p>
+                </div>
+                <div class="dia">
+                    <h2>Tomorrow</h2>
+                    <img src="img/some_sun.png" alt="soleado">
+                    <p>some sun</p>
+                    <p class=" temperaturas">
+                        <span class="temMax"id="temperatura3">27</span>
+                        <span class="temMin" id="temperatura4">19</span>
+                    </p>
+                </div>
+                <div class="dia">
+                    <h2>Friday</h2>
+                    <img src="img/some_clouds.png" alt="nublado">
+                    <p>some clouds</p>
+                    <p class=" temperaturas">
+                        <span class="temMax"id="temperatura5">21</span>
+                        <span class="temMin"id="temperatura6">16</span>
+                    </p>
+                </div>
+                <div class="dia".lastElement>
+                    <h2>Saturday</h2>
+                    <img src="img/some_sun.png" alt="soleado">
+                    <p>some sun</p>
+                    <p class=" temperaturas">
+                        <span class="temMax"id="temperatura7">26</span>
+                        <span class="temMin" id="temperatura8">21</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="cookie">
+                <img src="img/cookie.png" alt="cookie">
+                <div class="text">
+                    <h3>Stop! Cookie time.</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize <br> content and ads,to provide social media features and to <br> analyse our traffic. </p>
+                </div>
+                <button onclick="aceptar()">Aceptar</button>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
